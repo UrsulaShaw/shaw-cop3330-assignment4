@@ -7,7 +7,40 @@ class ToDoList {
 }
 
 class ToDoListController {
+
+
+    addList()
+    removeList()
+    renameList()
+
+    addItem()
+    removeItem()
+    editItemDesc()
+    editDueDate()
+    markCompleted()
+    showAll()
+    showCompleted()
+    showUncompleted()
+
+    saveList(list object)
+    saveAllLists()
+
 }
+
+class List {
+    title: String
+
+}
+
+class Item {
+    description: String
+    dueDate: Date
+
+}
+
+ToDoList -- ToDoListController
+List *-- Item
+
 
 
 
